@@ -15,6 +15,6 @@ const explorerSchema = new Schema({
     }
 });
 
-const Explorer = model("Explorer", explorerSchema);
+const Explorer = model("explorers", explorerSchema);
 
 export default Explorer;

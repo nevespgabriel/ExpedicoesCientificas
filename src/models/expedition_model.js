@@ -11,13 +11,13 @@ const expeditionSchema = new Schema({
     },
     participants:{
         type: [Schema.ObjectId],
-        ref: "Explorer",
+        ref: "explorers",
         required: true,
         minLenght: 2
     },
     speciesFound:{
         type: [Schema.ObjectId],
-        ref: "Specie",
+        ref: "species",
         required: true,
         validate: {
             validator: function(v) {
@@ -29,6 +29,6 @@ const expeditionSchema = new Schema({
 },
 { strictPopulate: false });
 
-const Expedition = model("Expedition", expeditionSchema);
+const Expedition = model("expeditions", expeditionSchema);
 
 export default Expedition;

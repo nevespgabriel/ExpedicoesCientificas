@@ -21,6 +21,6 @@ const specieSchema = new Schema({
     }
 });
 
-const Specie = model("Specie", specieSchema);
+const Specie = model("species", specieSchema);
 
 export default Specie;
